@@ -32,6 +32,7 @@ public class MyDataRestConfig implements RepositoryRestConfigurer{
 
     }
 
+    @SuppressWarnings("rawtypes")
     private void disableHttpMethods(Class theClass, RepositoryRestConfiguration config, HttpMethod[] theUnsupportedActions) {
 
         config.getExposureConfiguration()
